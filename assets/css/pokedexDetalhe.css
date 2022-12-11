@@ -87,25 +87,33 @@
 }
 
 .pokemon .number {
-    color: #000;
-    opacity: .3;
+    color: #FFF;
+    opacity: .6;
     text-align: right;
-    font-size: .625rem;
+    font-size: 1rem;
+
 }
 
-.pokemon .name {
+.pokemon .detailName {
     text-transform: capitalize;
+    font-size: 130%;
     color: #fff;
     margin-bottom: .25rem;
-    font-size: 1rem;
-    text-align: left;
+    text-align: center;
+}
+
+.pokemon .detailPoke {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .pokemon .detail {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .pokemon .detail .types {
@@ -114,19 +122,30 @@
     list-style: none;
 }
 
+.pokemon .detailBox {
+    background-color: #d8e0e7;
+    flex-direction: row;
+    font-size: 1rem;
+    color: #000;
+    text-align: center;
+
+}
+
 .pokemon .detail .types .type {
     color: #fff;
     padding: .25rem .5rem;
     margin: .25rem 0;
-    font-size: .625rem;
+    font-size: 1rem;
     border-radius: 1rem;
     filter: brightness(1.1);
     text-align: center;
 }
 
-.pokemon .detail img {
+.pokemon .detailPoke img {
     max-width: 100%;
-    height: 70px;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
 }
 
 .pagination {
@@ -148,31 +167,20 @@
     border-radius: 1rem;
 }
 
-.button {
-    padding: .25rem .5rem;
-    margin: .25rem 0;
-    font-size: 1rem;
-    color: #fff;
-    background-color: #6c79db;
-    border: none;
-    border-radius: 1rem;
-}
-
-
 @media screen and (min-width: 380px) {
     .pokemons {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
 }
 
 @media screen and (min-width: 576px) {
     .pokemons {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 }
 
 @media screen and (min-width: 992px) {
     .pokemons {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
